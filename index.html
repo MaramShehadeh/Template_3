@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Maram Shehadeh Project3
+        </title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+       
+
+       
+
+        
+        
+    </head>
+    <body class="bod">
+
+      <nav class="navbar fixed-top navbar-expand-lg p-0" style="background-color: white; z-index: 2;" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/maram.jpg" alt="Avatar Logo" style="width:60px;" class="rounded-pill mx-3"> 
+          </a>
+          <a class="navbar-brand me-0 text-uppercase sy fs-2 fw-bold pp" href="#"> Syria
+           </a>
+         
+          <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 ms-3">
+              <li class="nav-item">
+                <a class="nav-link active text-info" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown border border-3 y border-info">
+                <a class="nav-link dropdown-toggle text-info nav-menu " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Trips
+                </a>
+                <ul class="dropdown-menu y text-uppercase bg-light  bg-opacity-75" aria-labelledby="navbarDropdown" style="margin-top: 11.5px;">
+                  <li><a class="dropdown-item" href="#" style="color: #59B4C3;">Damascus</a></li>
+                  <li><a class="dropdown-item" href="#" style="color: #59B4C3;">Aleppo</a></li>
+                  <li><hr class="dropdown-divider" style="background-color: #049d9d; height: 3px;" ></li>
+                  <li><a class="dropdown-item" href="#" style="color: #59B4C3;">Latakia</a></li>
+                  <li><a class="dropdown-item" href="#" style="color: #59B4C3;">Tartous</a></li>
+                  <li><a class="dropdown-item" href="#" style="color: #59B4C3;">Homs</a></li>
+                  <li><a class="dropdown-item" href="#" style="color: #59B4C3;">Al Hasakah</a></li>
+                  <li><a class="dropdown-item" href="#" style="color: #59B4C3;">More ...</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info " href="#">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 border border-2 border-info y fs-5 " type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-info text-white fs-5 y"  type="submit">Search</button>
+              <button class="btn btn-info ms-3 text-white fs-5 y"     data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              type="button">Login</button>
+
+
+
+
+
+
+            </form>
+
+            <!-- Modal -->
+<div class="modal" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-info text-white">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <label for="email" class="form-label text-info fs-5">Email address</label>
+        <input type="email" class="form-control border border-2 border-info y" id="email">
+        <small class="d-block text-muted ms-2 mb-3 w-100">We'll never share your email with any one else.</small>
+        <label for="password" class="form-label text-info fs-5">Password</label>
+        <input type="password" class="form-control border border-2 border-info y" id="password">
+        <div class="form-check form-switch  ms-3 mt-3">
+          <input class="form-check-input bg-info mt-2"  type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+          <label class="form-check-label text-info fs-5" for="flexSwitchCheckChecked">Remmember me</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" class="btn btn-info text-white y me-10">Login</button>
+        <button type="button" class="btn btn-info text-white y me-2" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </nav>
+
+
+ <!--***********************************************************************************************************************************  -->
+
+
+  <aside>
+  <ul class="nav flex-column  align-items-end justify-content-end fixed-top" style="width: 60px;height: 90vh;font-size:65px; margin-left:88%;">
+    <li class="nav-item " >
+      <a class="nav-link active p-0 " aria-current="page" href="#" style="color: #184349;"><i class="fab fa-facebook-square"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-0" href="#" style="color: #184349;"><i class="fab fa-whatsapp-square "></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-0" href="#" style="color: #184349;"><i class="fab fa-twitter-square"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-0" href="#" style="color:#184349;"><i class="fab fa-linkedin"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-0" href="#" style="color: #184349;"><i class="fab fa-instagram-square"></i></a>
+    </li>
+  </ul>
+   
+  </aside>
+
+ 
+<!-- ******************************************************************************************************************************************************************************************************* -->
+
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="height: 95vh !important;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner " style="height: 95vh !important;">
+    <div class="carousel-item active h-100">
+      <img src="images/damas1.jpg" class="d-block w-100 h-100" alt="...">
+      <div class="carousel-caption d-none d-md-block y"  style="background: rgba(89, 180, 195,.4);">
+        <h2 class="text-uppercase fs-1">Damascus</h2>
+        <p class="fs-5">Unforgettable days and the most beautiful memories in ancient Damascus</p>
+        <button class="btn btn-info text-white fs-6 y"  type="submit">Visit US</button>
+      </div>
+    </div>
+    <div class="carousel-item h-100">
+      <img src="images/alepo.jpg" class="d-block w-100 h-100" alt="...">
+      <div class="carousel-caption d-none d-md-block y" style="background: rgba(89, 180, 195,.3);">
+        <h2 class="text-uppercase fs-1">aleppo</h2>
+        <p class="fs-5">How beautiful you are, Aleppo!</p>
+        <button class="btn btn-info text-white fs-6 y"  type="submit">Visit US</button>
+      </div>
+    </div>
+    <div class="carousel-item h-100">
+      <img src="images/damas3.jpg" class="d-block w-100 h-100" alt="...">
+      <div class="carousel-caption d-none d-md-block y" style="background: rgba(89, 180, 195,.3);">
+        <h2 class="text-uppercase fs-1">Damascus</h2>
+        <p class="fs-5">Unforgettable days and the most beautiful memories in ancient Damascus</p>
+        <button class="btn btn-info text-white fs-6 y"  type="submit">Visit US</button>
+      </div>
+    </div>
+    <div class="carousel-item h-100">
+      <img src="images/damas4.jpg.jpg" class="d-block w-100 h-100" alt="...">
+      <div class="carousel-caption d-none d-md-block y" style="background: rgba(89, 180, 195,.3);">
+        <h2 class="text-uppercase fs-1">Damascus</h2>
+        <p class="fs-5">Unforgettable days and the most beautiful memories in ancient Damascus</p>
+        <button class="btn btn-info text-white fs-6 y"  type="submit">Visit US</button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="z-index: 2000;">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="z-index: 2000; width: 30px;
+  right: 115px;">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- *************************************************************************************************************************************************************************** -->
+
+
+
+<div class="shadow-lg pb-3 border-start border-bottom border-end border-top border-2 yy" style="background-color: rgb(137, 221, 221) !important; border-color:rgb(92, 205, 205)!important;">
+  <div class="m-4 position-relative">
+    <h3 class="text-uppercase pp fw-bold">welcome</h3>
+      <p class="text-white fs-4">gggg jjjjjd  ddddd lllppppp nnnnsdvvv  gggg jjjjjd  ddddd lllppppp nnnnsdvvv  gggg jjjjjd  ddddd lllppppp nnnnsdvvv gggg jjjjjd  ddddd lllppppp nnnnsdvvv</p>
+      <button type="button" class="btn btn-light text-info fs-4 y fixed-end" >Learn more</button>
+    
+  </div>
+ 
+</div>
+
+<hr class="bg-secondary" style="height: 1.5px;">
+
+<!--  ********************************************************************************************************************************************************************************************************************-->
+
+<div class="shadow-lg pb-3 border-start border-bottom border-end border-top border-2 y" style="background-color: rgb(86, 185, 185) !important; border-color:rgb(92, 205, 205)!important;">
+  
+    <h1 class="text-white text-center m-5">Popular destinations in Syria</h1>
+      
+  </div>
+ 
+  <!-- ************************************************************************************************************************************************************************************************************************************ -->
+
+
+
+
+  <div class=" shadow accordion-flush mt-4" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="kk shadow-lg accordion-button collapsed text-uppercase pp fs-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style=" color: transparent !important;">
+          Damascus city
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class=" kk shadow-lg accordion-button collapsed text-uppercase pp fs-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style=" color: transparent !important;" >
+          aleppo city
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="kk shadow-lg accordion-button collapsed text-uppercase pp fs-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style=" color: transparent !important;">
+          lattakia city
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="bg-secondary" style="height: 1.5px;">
+
+<!-- *********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** -->
+
+
+
+<div class=" border border-2 y" style="background-color: rgb(86, 185, 185) !important; border-color:rgb(92, 205, 205)!important;">
+
+  <h1 class="text-white text-capitalize text-center m-3">translate from arabic to english</h1>
+    
+</div>
+
+
+<div class="shadow-lg pb-3 border-start border-bottom border-end border-top border-2 yy" style="background-color: rgb(137, 221, 221) !important; border-color:rgb(92, 205, 205)!important;">
+  <div class="m-4 position-relative">
+    <span class="text-white fs-3 ">Write and Translate </span> <span class="text-capitalize fs-3" style="color: #2e7882;">press here</span>
+     
+    <button id="copy" class="btn-clip btn btn-light text-info fs-5 y d-block mt-2 border border-2 p-2 m-0 " data-clipboard-text="gg"  data-bs-toggle="tooltip" data-bs-custom-class="copytooltip"  data-bs-placement="right"  title="Copy to Clipboard"
+    >
+    <span data-bs-toggle="modal" data-bs-target="#copyModal" aria-dialog="true" type="button" >Copy
+
+    </span>
+    </button>
+
+
+      <textarea class="form-control mt-3 border border-2 y fs-5" rows="6" placeholder="translate"></textarea>
+    
+  </div>
+
+</div>
+<hr class="bg-secondary" style="height: 1.5px;">
+
+
+<div class=" border border-2 y" style="background-color: rgb(86, 185, 185) !important; border-color:rgb(92, 205, 205)!important;">
+
+  <h1 class="text-white text-capitalize text-center m-3">translate from arabic to frensh</h1>
+    
+</div>
+
+
+<div class="shadow-lg pb-3 border-start border-bottom border-end border-top border-2 yy" style="background-color: rgb(137, 221, 221) !important; border-color:rgb(92, 205, 205)!important;">
+  <div class="m-4 position-relative">
+    <span class="text-white fs-3 ">Write and Translate </span> <span class="text-capitalize fs-3" style="color: #2e7882;">press here</span>
+     
+    <button id="copy2" class="btn-clip2 btn btn-light text-info fs-5 y d-block mt-2 border border-2 p-2 m-0 " data-clipboard-text="gg"  data-bs-toggle="tooltip" data-bs-custom-class="copytooltip"  data-bs-placement="right"  title="Copy to Clipboard"
+    >
+    <span data-bs-toggle="modal" data-bs-target="#copyModal" aria-dialog="true" type="button" >Copy
+
+    </span>
+    </button>
+
+
+      <textarea class="form-control mt-3 border border-2 y fs-5" rows="6" placeholder="translate"></textarea>
+    
+  </div>
+
+</div>
+<hr class="bg-secondary" style="height: 1.5px;">
+
+<div class=" border border-2 y" style="background-color: rgb(86, 185, 185) !important; border-color:rgb(92, 205, 205)!important;">
+
+  <h1 class="text-white text-capitalize text-center m-3">translate from arabic to german</h1>
+    
+</div>
+
+
+<div class="shadow-lg pb-3 border-start border-bottom border-end border-top border-2 yy" style="background-color: rgb(137, 221, 221) !important; border-color:rgb(92, 205, 205)!important;">
+  <div class="m-4 position-relative">
+    <span class="text-white fs-3 ">Write and Translate </span> <span class="text-capitalize fs-3" style="color: #2e7882;">press here</span>
+     
+    <button id="copy3" class="btn-clip3 btn btn-light text-info fs-5 y d-block mt-2 border border-2 p-2 m-0 " data-bs-trigger="hover" data-clipboard-text="gg"  data-bs-toggle="tooltip" data-bs-custom-class="copytooltip"  data-bs-placement="right"  title="Copy to Clipboard"
+    >
+
+    
+    <span data-bs-toggle="modal" data-bs-target="#copyModal" aria-dialog="true" type="button" >Copy
+
+    </span>
+    </button>
+
+
+      <textarea class="form-control mt-3 border border-2 y fs-5" rows="6" placeholder="translate"></textarea>
+    
+  </div>
+
+</div>
+<hr class="bg-secondary" style="height: 1.5px;">
+
+<!-- Modal -->
+<div class="modal fade border-0" id="copyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-body fw-bold">
+        maram-shehadeh.sy.com says
+       </div>
+     
+      <div class="modal-body " dir="rtl">
+       تم نسخ النص
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary d-block px-4" data-bs-dismiss="modal">OK</button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="bg-img">
+
+</div>
+
+
+<div class="shadow-lg pb-3 border-start border-bottom border-end border-top border-2 y" style="background-color: rgb(86, 185, 185) !important; border-color:rgb(92, 205, 205)!important;">
+  
+  <h1 class="text-center text-uppercase fs-1 pp p-2 m-0">Popular destinations in Syria</h1  >
+    
+</div>
+
+
+<div class="container-fluid">
+  <div class="row justify-content-evenly mt-2 gy-5">
+    <div class="col-lg-3 col-sm-12 bg-light border bg-light border-secondary rounded-2">
+      <div class="card border-0" style="width:100%">
+        <img src="images/maram.jpg" class="card-img-top  " alt="...">
+        <div class="card-body row">
+          <h5 class="card-title col-lg-6 col-sm-6">Card title</h5>
+          <a href="#" class="btn btn-primary col-lg-6 col-sm-6">Go somewhere</a>
+          <p class="card-text col-lg-12 col-sm-12">Some quick example text .</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 bg-light border bg-light border-secondary rounded-2">
+      <div class="card border-0" style="width:100%">
+        <img src="images/maram.jpg" class="card-img-top  " alt="...">
+        <div class="card-body row">
+          <h5 class="card-title col-lg-6 col-sm-6">Card title</h5>
+          <a href="#" class="btn btn-primary col-lg-6 col-sm-6">Go somewhere</a>
+          <p class="card-text col-lg-12 col-sm-12">Some quick example text .</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 bg-light border bg-light border-secondary rounded-2">
+      <div class="card border-0" style="width:100%">
+        <img src="images/maram.jpg" class="card-img-top  " alt="...">
+        <div class="card-body row">
+          <h5 class="card-title col-lg-6 col-sm-6">Card title</h5>
+          <a href="#" class="btn btn-primary col-lg-6 col-sm-6">Go somewhere</a>
+          <p class="card-text col-lg-12 col-sm-12">Some quick example text .</p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-evenly mt-2 gy-5">
+    <div class="col-lg-3 border bg-light border-secondary rounded-2">
+      <div class="card border-0" style="width:100%">
+        <img src="images/maram.jpg" class="card-img-top  " alt="...">
+        <div class="card-body row">
+          <h5 class="card-title col-lg-6 col-sm-6">Card title</h5>
+          <a href="#" class="btn btn-primary col-lg-6 col-sm-6">Go somewhere</a>
+          <p class="card-text col-lg-12 col-sm-12">Some quick example text .</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 border bg-light border-secondary rounded-2">
+      <div class="card border-0" style="width:100%">
+        <img src="images/maram.jpg" class="card-img-top  " alt="...">
+        <div class="card-body row">
+          <h5 class="card-title col-lg-6 col-sm-6">Card title</h5>
+          <a href="#" class="btn btn-primary col-lg-6 col-sm-6">Go somewhere</a>
+          <p class="card-text col-lg-12 col-sm-12">Some quick example text .</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 border bg-light border-secondary rounded-2">
+      <div class="card border-0" style="width:100%">
+        <img src="images/maram.jpg" class="card-img-top  " alt="...">
+        <div class="card-body row">
+          <h5 class="card-title col-lg-6 col-sm-6">Card title</h5>
+          <a href="#" class="btn btn-primary col-lg-6 col-sm-6">Go somewhere</a>
+          <p class="card-text col-lg-12 col-sm-12">Some quick example text .</p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-evenly mt-2 gy-5">
+    <div class="col-lg-3 border bg-light border-secondary rounded-2">
+      <div class="card border-0" style="width:100%">
+        <img src="images/maram.jpg" class="card-img-top  " alt="...">
+        <div class="card-body row">
+          <h5 class="card-title col-lg-6 col-sm-6">Card title</h5>
+          <a href="#" class="btn btn-primary col-lg-6 col-sm-6">Go somewhere</a>
+          <p class="card-text col-lg-12 col-sm-12">Some quick example text .</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 border bg-light border-secondary rounded-2">
+      <div class="card border-0" style="width:100%">
+        <img src="images/maram.jpg" class="card-img-top  " alt="...">
+        <div class="card-body row">
+          <h5 class="card-title col-lg-6 col-sm-6">Card title</h5>
+          <a href="#" class="btn btn-primary col-lg-6 col-sm-6">Go somewhere</a>
+          <p class="card-text col-lg-12 col-sm-12">Some quick example text .</p>
+         
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/clipboard.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
+
