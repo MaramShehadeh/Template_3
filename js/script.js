@@ -4,11 +4,6 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
-
 let clipboard = new ClipboardJS('.btn-clip');
 
 var btn = document.getElementById("copy")
@@ -66,7 +61,6 @@ clipboard3.on('success', function (e) {
  
     let btn_tooltip = bootstrap.Tooltip.getInstance(trigger_button);
     
-    btn3.focus()
 
     btn_tooltip.show();
 

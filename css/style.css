@@ -5,16 +5,30 @@
 }
 
 
-.divider{
-    background-color: gray;
-    width: 1.5px;
-    height: 50px !important;
-
+body{
+    font-family: 'varela round' , sans-serif;
 }
 
+/* ************************************** Navebar********************************************* */
+
+.navbar-brand{
+
+    border-right: 2px solid rgb(192, 190, 190);
+}
+
+.gradient-head{
+
+    background : -webkit-linear-gradient(top, #d84641, #9b59b6, #0011ff) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+.nav-menu{
+    background: rgba(243, 241, 241,.7) !important;
+}
 .nav-menu:hover{
     font-size: 21px;
-    
 }
 
 .nav-menu:hover::first-letter{
@@ -24,30 +38,13 @@
         font-size: 23px;
  }
 
-.y{
+.rounded-10{
     border-radius: 10px;
 }
 
-.yy{
-    border-radius: 0px 0px 10px 10px;
-}
 
-.sy{
-    position: relative;
-    width: 108px;
-}
-.sy::before{
 
-    border-width:1px;
-    height:60%;
-    color: rgb(186, 186, 186);
-    content: "";
-    position: absolute;
-    border-style: solid;
-    right:0;
-    bottom: 15%;
-    background: rgba(179, 177, 177, 0.2);
-}
+/* ***************************************Navbar Modal************************************************************************************** */
 
 .modal-backdrop{
 display: none;
@@ -72,33 +69,54 @@ display: none;
     margin-right: 68%;
 }
 
-
+/* *********************************************Side Nav******************************************************************************************************************** */
   
+.side-nav{
+
+    top:14vh;
+    z-index: 2;
+}
+
+.nav{
+    right: 3.5%;
+    font-size:57px
+}
+
+.nav .nav-link{
+
+    color: #184349 !important;
+}
 .nav .nav-link:hover {
    color: rgb(50, 113, 113) !important;
 }
 
-body{
-    height: 4000px;
+/* ********************************************Welcome Section*********************************************************************************************** */
 
+
+.welcome-body{
+    background-color: rgb(137, 221, 221) !important;
+    border-color:rgb(92, 205, 205)!important;
 }
-.pp{
+.rounded-bottom-10{
+    border-radius: 0px 0px 10px 10px;
+}
 
-    background : -webkit-linear-gradient(top, #d84641, #9b59b6, #0011ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    
+.welcome-body button:hover{
+
+    background-color: rgb(228, 226, 226) !important;
+    color: #036e7c !important;
    
 }
 
-.btn:hover{
+/* ****************************************************Popular******************************************************************************** */
 
-    background-color: rgb(220, 220, 220) !important;
-   
+.Popular{
+    background-color: rgb(86, 185, 185) !important;
+    border-color:rgb(92, 205, 205)!important;
 }
-.accordion-button:focus
-{
+
+.accordion-button:focus{
+
     background : -webkit-linear-gradient(top, #d84641, #9b59b6, #0011ff) !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
@@ -106,8 +124,27 @@ body{
     transition: 0.5;
 }
 
+.accordion-item button{
 
-.copytooltip{
+    color: transparent !important;
+}
+
+/* ********************************************************Translate********************************************************************************************* */
+
+
+.translate{
+
+    background-color: rgb(86, 185, 185) !important;
+    border-color:rgb(92, 205, 205)!important;
+}
+
+.translate-body{
+
+    background-color: rgb(137, 221, 221) !important;
+    border-color:rgb(92, 205, 205)!important;
+}
+.copytooltip
+{
     padding-left: 2px !important;
     visibility: visible;
  }
@@ -124,7 +161,6 @@ body{
     font-size: 18px;
     font-weight: 600;
     width: 100px;
-    /* height: 60px; */
 
  }
 
@@ -134,6 +170,24 @@ body{
     
   }
 
+.btn-clip:hover{
+
+    background-color: rgb(215, 214, 214) !important;
+
+}
+
+.btn-clip2:hover{
+
+    background-color: rgb(215, 214, 214) !important;
+}
+
+.btn-clip3:hover{
+
+    background-color: rgb(215, 214, 214) !important;
+}
+
+/* ******************************************Translate Modal************************************************************************************************************ */
+
 #copyModal .modal-footer::after{
     border: 0px solid #dee2e6;
     width: 0%;
@@ -142,9 +196,102 @@ body{
     top: 0;
 }
 
+/* ******************************************background image**************************************************************************************************************************/
+
 .bg-img{
 
-    height: 50vh;
+    height: 40vh;
+    background-image: url(../images/damas1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* **************************************************Popular Destinations****************************************************************************************** */
+
+
+.Popular-destinations{
+
+    background-color: rgb(86, 185, 185) !important;
+    border-color:rgb(92, 205, 205)!important;
+}
+
+.Popular-destinations h1{
+
+    font-size: 42px;
+}
+
+.card-body-flex button{
+
+    flex:1
+}
+
+.card-body-flex h5{
+
+    flex:2
+}
+
+.destinations-hov{
+    position: relative;
+}
+.destinations-hov::after{
+
+    position: absolute;
+    content: "";
+
+    width:5% ;
+    height:5%;
+
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    background: rgb(122, 206, 238,.5) ;
+
+    transition:1s;
+  
+}
+
+.destinations-hov:hover::after{
+
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    
+}
+
+.destinations-hov::before{
+
+    position: absolute;
+    content: "";
+
+    width:5% ;
+    height:5%;
+
+    bottom: 0;
+    right: 0;
+
+    background: rgb(122, 206, 238,.5) ;
+    visibility: hidden;
+    transition:1s;
+    z-index: 1;
+  
+}
+
+.destinations-hov:hover::before{
+
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    
+}
+
+
+/* ************************************************Background image************************************************************* */
+
+.bg-img2{
+
+    margin-top: 5%;
+    height: 40vh;
     background-image: url(../images/damas1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,7 +299,332 @@ body{
 }
 
 
-.mm .col-sm-12{
-    /* padding-left: 20px;
-    padding-right: 20px; */
+/* ************************************************Thanks for************************************************************************************* */
+
+.thanks-for{
+
+    background-color: rgb(86, 185, 185) !important;
+    border-color:rgb(92, 205, 205)!important;
 }
+
+.rounded-20{
+    border-radius: 20px;
+}
+
+.thanks{
+
+    transition: .5s
+}
+
+.thanks-card {
+    height: 65vh;
+   
+}
+
+.thanks-card .card-img{
+
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+
+}
+
+.card-img-overlay{
+  
+ 
+    background: rgba(31, 78, 109, 0.5) ;
+    padding: 2rem;
+}
+
+
+.card-img-overlay-top{
+
+    flex:2;
+    transition: .5s;
+}
+
+.card-img-overlay-bottom{
+
+    flex:1
+}
+
+.card-img-overlay-bottom p{
+
+    font-size: 15px;
+    line-height: 15px;
+   
+}
+
+ .thanks-img-border {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background:gray;
+    box-sizing: border-box;
+    clip-path: ellipse(40% 50% at 50% 50%);
+    margin-bottom: 10px;
+    
+ }
+ 
+.thanks-img {
+    position: absolute;
+    top: 3px; 
+    left: 3px; 
+    width: 114px; 
+    height: 114px; 
+    clip-path: ellipse(40% 50% at 50% 50%);      
+}
+
+.thanks:hover{
+
+    transform: scale(.9);
+    
+}
+
+.thanks:hover .card-img-overlay{
+
+     background: rgba(17, 84, 128, 0.7);
+  
+}
+
+.thanks:hover .card-img-overlay-top{
+     
+    margin-top: 30px;
+}
+.thanks:hover .thanks-img-border{
+
+    background-color: #105f94;
+ 
+}
+
+/* ****************************************************News*********************************************************************************** */
+
+
+.news .news-card{
+    height: 400px;
+    box-shadow: 0px 0px 50px 15px rgb(182, 196, 250);
+}
+
+.news .bg4{
+    background: -webkit-linear-gradient( right , rgb(249, 245, 231)  , rgb(227, 230, 232) ) !important ;
+}
+
+.news .bg3{
+    background: -webkit-linear-gradient( left , rgb(239, 251, 242)  , rgb(227, 230, 232) ) !important ;
+}
+
+.news .bg2{
+    background: -webkit-linear-gradient( right , rgb(249, 235, 235)  , rgb(227, 230, 232) ) !important ;
+}
+
+.news .bg1{
+    background: -webkit-linear-gradient( left , rgb(228, 237, 249)  , rgb(227, 230, 232) ) !important ;
+}
+
+
+.news .news-card .img-box{
+    flex:1;
+  
+}
+
+.news .news-card .description{
+    flex: 2;
+
+} 
+
+.img-right{
+   
+    clip-path: polygon(7% 0, 100% 0, 100% 100%, 20% 100%);
+}
+
+.img-left{
+
+    clip-path: polygon(0 0, 90% 0, 80% 100%, 0 100%);
+   
+}
+
+.line{
+    width: 50px;
+    height: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition:  0.5s ease;
+}
+
+.news-card .description p{
+   font-weight: 500;
+   height: 100%;
+}
+
+.news-card .description ul .list-item{
+
+    background: rgba(83, 83, 83, 0.4);
+    border-radius: 3px;
+    padding: 3.5px 10px; 
+  
+}
+
+.news-card:hover .line{
+    width: 110px;
+}
+
+.news-card img{
+  
+    transition:  1s ;
+}
+
+.news-card:hover img{
+   transform: scale(1.2);
+}
+
+.news-card .description .list-item:hover{
+    background: rgba(83, 83, 83, 0.6);
+ }
+
+ .news-card .description .list-info:hover{
+
+    background-color: #07b5d8;
+ }
+
+.news-card .description .list-dan:hover{
+
+    background: rgba(126, 1, 1, 0.7) !important;
+ }
+
+ .news-card .description .list-green:hover{
+
+    background: rgba(3, 95, 44, 0.7) !important;
+ }
+
+ .news-card .description .list-war:hover{
+
+    background: rgb(218, 171, 1) !important;
+ }
+
+
+/* ***********************************************************Join Us********************************************************************************************************************** */
+
+
+
+ .join{
+    box-shadow: 0px 0px 30px 10px rgb(182, 196, 250);
+ }
+
+ .icon-img{
+    flex: 2;
+    width: 30%;
+    height: 30%;
+    box-shadow: 0px 0px 30px 5px rgb(89, 119, 240) !important;
+    border-radius: 20px;
+ }
+
+ .icon-top{
+    flex: 1;
+ }
+
+ .icon-under{
+    flex: 1;
+ }
+
+
+/* ******************************************************************************************************************************************************** */
+
+ .footer-img{
+    box-shadow: 0px 0px 30px 20px rgb(154, 169, 247) !important;
+ }
+
+ .footer-title{
+   font-weight: 400;
+   text-shadow: 2px   2px   7px    rgb(89, 119, 240) ;
+   color: whitesmoke !important;
+
+ }
+
+ .footer-sub-title{
+    
+    color: whitesmoke !important;
+ }
+
+ .footer-links{
+    
+    color: #13646e;
+    
+ }
+
+ .footer-links:hover{
+    color: #74e7f7;
+ }    
+ 
+ 
+ /* *********************************************************** @media**************************************************************************************************************** */
+
+
+
+
+ @media (width < 768px) {
+
+    .nav{
+
+        right: 9% !important;
+    }
+
+    .destinations-hov{
+
+        max-height: 62vh;
+    }
+
+    .thanks{
+
+        max-width: 70vw; 
+        height: 50vh;
+        margin: auto;
+
+    }
+
+    .news .news-card{
+        flex-direction: column !important;
+        height: 85vh;
+        max-width: 88vw; 
+        margin: auto;
+        overflow: auto;
+    }
+    
+    .news-card .description ul .list-item{
+        transform: scale(0.7);
+        margin: 1px !important ;
+        text-align: center;
+        flex: 1;
+    }
+    .news-card .description ul .list-item:last-child{
+
+        flex: 2;
+    }
+    
+    .news .news-card .img-box{
+    
+        min-height:40%;
+    }
+    
+    .news .news-card .description{
+        flex:1 !important;
+        padding: 0 !important;
+        padding: 2rem !important;
+
+    }
+
+    .img-left{
+
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+    }
+    .img-right{
+        
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+    }
+
+    .join{
+        max-width: 50vw; 
+        margin: auto;
+        overflow: auto;
+    }
+}
+
