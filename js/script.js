@@ -74,5 +74,3 @@ clipboard3.on('success', function (e) {
     
 });
 
-
-

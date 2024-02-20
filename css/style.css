@@ -561,7 +561,7 @@ display: none;
 
 
 
- @media (max-width: 500px) {
+ @media (max-width: 768px) {
 
     .nav{
 
@@ -593,11 +593,13 @@ display: none;
         transform: scale(0.7);
         margin: 1px !important ;
         text-align: center;
+        padding: 5px !important;
+
         flex: 1;
     }
     .news-card .description ul .list-item:last-child{
 
-        flex: 2;
+        flex: 1.5;
     }
     
     .news .news-card .img-box{
