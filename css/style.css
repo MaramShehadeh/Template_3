@@ -583,7 +583,7 @@ display: none;
 
     .news .news-card{
         flex-direction: column !important;
-        height: 85vh;
+        height: 88vh;
         max-width: 88vw; 
         margin: auto;
         overflow: auto;
