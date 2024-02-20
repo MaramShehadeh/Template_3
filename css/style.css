@@ -201,7 +201,7 @@ display: none;
 .bg-img{
 
     height: 40vh;
-    background-image: url(../images/damas1.jpg);
+    background-image: url(../images/alepo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -292,7 +292,7 @@ display: none;
 
     margin-top: 5%;
     height: 40vh;
-    background-image: url(../images/damas1.jpg);
+    background-image: url(../images/alepo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -546,7 +546,7 @@ display: none;
  }
 
  .footer-links{
-    
+
     color: #13646e;
     
  }
@@ -561,11 +561,11 @@ display: none;
 
 
 
- @media (width < 768px) {
+ @media (max-width: 500px) {
 
     .nav{
 
-        right: 9% !important;
+        right: 10% !important;
     }
 
     .destinations-hov{

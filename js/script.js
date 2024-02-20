@@ -4,6 +4,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 
+
 let clipboard = new ClipboardJS('.btn-clip');
 
 var btn = document.getElementById("copy")
@@ -27,6 +28,7 @@ clipboard.on('success', function (e) {
 });
 
 
+
 let clipboard2 = new ClipboardJS('.btn-clip2');
 
 var btn2 = document.getElementById("copy2")
@@ -48,6 +50,8 @@ clipboard2.on('success', function (e) {
     trigger_button.setAttribute('data-bs-original-title', 'Copy to Clipboard');
     
 });
+
+
 
 let clipboard3 = new ClipboardJS('.btn-clip3');
 
