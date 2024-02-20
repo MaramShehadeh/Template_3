@@ -583,23 +583,23 @@ display: none;
 
     .news .news-card{
         flex-direction: column !important;
-        height: 88vh;
-        max-width: 88vw; 
+        height: 88vh !important;
+        max-width: 88vw !important; 
         margin: auto;
         overflow: auto;
     }
     
     .news-card .description ul .list-item{
-        transform: scale(0.7);
+        transform: scale(0.7) !important;
         margin: 1px !important ;
-        text-align: center;
+        text-align: center !important;
         padding: 5px !important;
 
         flex: 1;
     }
     .news-card .description ul .list-item:last-child{
 
-        flex: 1.5;
+        flex: 1.4;
     }
     
     .news .news-card .img-box{
